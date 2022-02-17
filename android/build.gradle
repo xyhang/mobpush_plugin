@@ -4,6 +4,7 @@ version '1.0-SNAPSHOT'
 buildscript {
     repositories {
         maven {
+            allowInsecureProtocol = true
             url "http://mvn.mob.com/android"
         }
         google()
@@ -19,6 +20,7 @@ buildscript {
 rootProject.allprojects {
     repositories {
         maven {
+            allowInsecureProtocol = true
             url "http://mvn.mob.com/android"
         }
         google()

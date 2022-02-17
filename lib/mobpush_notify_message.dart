@@ -12,7 +12,7 @@ class MobPushNotifyMessage {
   /*
    * 消息内容
    */
-  String? content;
+  String content;
 
   /*
    * 消息时间戳
@@ -25,7 +25,7 @@ class MobPushNotifyMessage {
    * 副标题
    */
   String? subTitle;
-
+  
   /*
    * 消息时间戳
    */
@@ -83,10 +83,10 @@ class MobPushNotifyMessage {
    */
   bool? light;
 
-  MobPushNotifyMessage(
-      {this.title,
-      this.content,
-      this.messageId,
+  MobPushNotifyMessage({
+      this.title,
+      required this.content,
+      required this.messageId,
       this.timestamp,
       this.style,
       this.channel,
